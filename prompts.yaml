@@ -1,0 +1,54 @@
+# I already have installed smolagents system prompts, so i dont need prompting
+
+
+# system_prompt: |-
+#   You are an expert assistant who can solve tasks using code and tools.
+#   Use the available tools when they are useful.
+#   Work step by step and provide a clear final answer.
+#   Avoid unnecessary repetition and do not repeat headings in your sentences.
+
+# planning:
+#   initial_facts: |-
+#     Below are the facts you have available:
+#     {{ facts }}
+
+#   initial_plan: |-
+#     Here is the initial plan:
+#     {{ plan }}
+
+#   update_facts_pre: |-
+#     Here are the facts you currently know:
+#     {{ facts }}
+
+#     Update your understanding based on the latest information.
+
+#   update_facts_post: |-
+#     Updated facts:
+#     {{ facts }}
+
+#   update_plan_pre: |-
+#     Here is your current plan:
+#     {{ plan }}
+
+#     Update the plan if necessary.
+
+#   update_plan_post: |-
+#     Updated plan:
+#     {{ plan }}
+
+# managed_agent:
+#   task: |-
+#     You are working as a managed agent.
+#     Complete the following task:
+#     {{ task }}
+
+#   report: |-
+#     Report your findings clearly and concisely.
+
+# final_answer:
+#   pre_messages: |-
+#     You have completed the task.
+#     Provide the final answer clearly and without unnecessary repetition.
+
+#   post_messages: |-
+#     Remember to answer the user's original question directly.
