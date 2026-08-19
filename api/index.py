@@ -1,3 +1,6 @@
+import os
+
+print("HF_TOKEN exists:", bool(os.getenv("HF_TOKEN")))
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -48,6 +51,7 @@ app.add_middleware(
 )
 # ---------------------------------------------------------
 # REQUEST MODEL
+
 # ---------------------------------------------------------
 
 class ChatRequest(BaseModel):
