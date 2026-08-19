@@ -14,7 +14,8 @@ dependencies = [
     "pillow==12.3.0",
     "pytz",
     "smolagents==1.26.0",
-    "python-dotenv==1.2.3"
+    "python-dotenv==1.2.3",
+    "ddgs==9.15.0"
 ]
 
 [tool.setuptools]
