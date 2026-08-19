@@ -40,7 +40,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://ai-research-agent-b7eucwr0i-haiqa1.vercel.app",
+        "https://ai-research-agent-19ok3y5h5-haiqa1.vercel.app",
+        "https://ai-research-agent-haiqa1.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
