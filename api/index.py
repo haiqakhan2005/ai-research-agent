@@ -35,19 +35,17 @@ app.add_middleware(SlowAPIMiddleware)
 # ---------------------------------------------------------
 # CORS
 # ---------------------------------------------------------
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://ai-research-agent-19ok3y5h5-haiqa1.vercel.app",
         "https://ai-research-agent-haiqa1.vercel.app",
     ],
+    allow_origin_regex=r"https://ai-research-agent-[a-z0-9]+-haiqa1\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # ---------------------------------------------------------
 # REQUEST MODEL
 # ---------------------------------------------------------
