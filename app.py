@@ -16,11 +16,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+print("HF_TOKEN exists:", bool(os.getenv("HF_TOKEN")))
+print("GEMINI_API_KEY exists:", bool(os.getenv("GEMINI_API_KEY")))
+
 search_tool = DuckDuckGoSearchTool()
 final_answer = FinalAnswerTool()
 
 image_generation_tool = load_tool(
     "agents-course/text-to-image",
+    token=os.getenv("HF_TOKEN"),
     trust_remote_code=True
 )
 
