@@ -8,3 +8,4 @@ __pycache__/
 
 .next/
 node_modules/
+api_original_from_git.txt
