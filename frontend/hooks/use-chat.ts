@@ -209,7 +209,7 @@ export function useChat() {
         // ---------------------------------------------------
 
         const response = await fetch(
-          "http://127.0.0.1:8000/chat",
+          "https://ai-research-agent-backend.fastapicloud.dev/chat",
           {
             method: "POST",
             headers: {
